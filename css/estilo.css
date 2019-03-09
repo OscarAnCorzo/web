@@ -1,0 +1,531 @@
+
+	*{
+	margin:0;
+	padding:0;
+	}
+
+	body{
+		background: white;
+		}
+
+	header{
+		z-index: 1;
+	}
+
+	#contenedor{
+		position: fixed;
+		width: 100%;
+		z-index: 1;
+	}
+
+	#encabezado{
+		padding:0;
+		margin:0;
+		width: 100%;
+		height:110px;
+		background:#FE9A2E;
+		position:fixed;
+		z-index:0;filter:alpha(opacity=90);-moz-opacity:.90;opacity:.90;
+	}
+
+	#let{
+		position: relative;
+		top: 4px;
+	}
+
+	#imagen{
+		background: white;
+		display:inline-block;
+		position: relative;
+		left:10px;
+		width:220px;
+		height:88px;
+		z-index: 0;
+		filter:alpha(opacity=97);-moz-opacity:.97;opacity:.97;
+		-moz-border-radius: 110px / 44px;
+		-webkit-border-radius: 110px / 44px;
+		border-radius: 110px / 44px;
+		bottom:10px;
+		text-align: center;
+	}
+
+	#imagen2{
+		z-index: 0;
+		display:inline-block;
+		position: relative;
+		left: 15px;
+		background: transparent;
+		margin: 0px 0px 0px 10px;
+		bottom:5px;
+	}
+
+	#barra{
+		position:relative;
+		display:inline-block;
+		left:8%;
+		top:40px;
+		width: 66%;
+		height: 100px;
+	}
+
+	#barra #menu{
+
+		width:100%;
+		height:43px;
+
+	}
+
+	nav{
+		margin:auto;
+		width:100%;
+		position: relative; /*para tratar de centrar el menu*/
+		left:0px;
+
+	}
+
+
+	/* forma a los botones */
+	nav ul{
+		list-style: none; /* para quitar las viñetas */
+
+	}
+
+
+	/* pra todas las cajas */
+	nav ul li a{
+		background: transparent;
+
+		text-decoration: none;
+		display:block;
+		width:100%;
+		position:relative;
+		font-size: 18px;
+	}
+
+	nav ul .de a{
+
+		padding: 10px 20px 10px 20px;
+	}
+
+	nav ul .iz a{
+
+		padding: 10px 5px 10px 10px;
+	}
+
+	/* padding para las subcajas */
+
+	nav  ul  li  ul  li  a{
+		width: auto;
+		text-align: center;
+	}
+
+	/* para ponerlos en forma horizontal */
+	
+	/* el de son los del lado izquierdo y el iz son los del lado derecho */
+	nav > ul > .de{
+		float:left;
+	}
+
+	nav > ul > .iz{
+		float:right;
+	}
+
+	#uno{
+		position: relative;
+		right: 0%;
+	}
+
+	#dos{
+		position: relative;
+		right: 25%;
+	}
+
+	.c{
+		display: none;
+	}
+
+	/* cambiar el color cuando pasamos el mouse 
+	nav ul li .co:hover{
+		background:#2E2EFE;
+		padding: 10px 20px 10px 20px;
+	}*/
+
+	/* para esconder los submenus */
+	nav > ul > li > ul{
+		display:none;
+	}
+
+	/* para mostrar los submenus cuando pase el mouse */
+	nav ul li:hover ul{
+		display: block;
+		background: #FE9A2E;
+		filter:alpha(opacity=90);-moz-opacity:.90;opacity:.90;
+	}
+
+	.co{
+		color:#8d1042;
+		font-size: 20px;
+
+	}
+
+	.co:hover{
+		color:white;
+		border-color: red;
+	}
+
+	
+	/* diseño del pie de pagina */
+	footer{
+		background: #273746;
+		width:100%;
+		height: auto;
+		display: block;
+		position: relative;
+	}
+
+	#p1{
+		text-decoration: none;
+		width: 100%;
+		height: 180px;
+	}
+
+	#p11, #p12, #p13{
+		padding: 20px 0px 20px 0px;
+		color:white;
+	}
+
+	#p11 a, #p12 a, #p13 > a > span{
+		text-decoration: none;
+		color:white;
+	}
+
+	#p11{
+		text-align: center;
+		background: #273746;
+		width: 34%;
+		height: 180px;
+		position: relative;
+		display: block;
+		float: left;
+	}
+
+	#p12{
+		text-align: center;
+		background: #273746;
+		width: 33%;
+		height: 180px;
+		position: relative;
+		display: block;
+		float: left;
+	}
+
+	#p13{
+		text-align: center;
+		background: #273746;
+		width: 33%;
+		height: 180px;
+		position: relative;
+		display: block;
+		float: left;
+	}
+	/* par quitar la linea del link */
+	#p13 a{
+		text-decoration: none;
+	}
+
+	#red, #red1, #red2, #red3{
+		font-size: 35px;
+		display: inline-block;
+		width: 23%;
+		box-sizing: border-box;
+	}
+
+	footer > #p2{
+		padding: 20px 0px 20px 0px;
+		background: white;
+		text-align: center;
+		width: 100%;
+		height: 150px;
+	}
+
+	/* contenido de catalogo, modelos y acerca */
+
+	#menu_lateral{
+			display: inline-block;
+			position: relative;
+			width: 20%;
+			height: auto;
+			background: #8d1042;
+			float: left;
+			margin-right: 1%;
+			padding-top: 1%;
+			padding-left: 2%;
+			padding-right: 2%;
+			list-style: none;
+		}
+
+		.enla{
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+			line-height: 150%;
+		}
+
+		.enla:hover{
+			color: #efb810;
+		}
+
+		.cuerpo{
+			position: relative;
+			width: 74%;
+			height:auto;
+			z-index: 0;
+			text-align: center;
+			display: inline-block;
+			float: left;
+			background: white;
+			margin-left: 1%;
+		}
+
+		#ofertas, #niña, #dama, #caballero{
+			display: inline-block;
+			position: relative;
+			width: 100%;
+			margin-top: 2%;
+			padding: 1% 1% 1% 1%;
+			border: 3px solid #ccc;
+			border-radius: 2%;
+		}
+
+		input{
+			padding: 2%;
+			border-radius: 6px;
+			width: 80%;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+
+		select{
+			padding: 1%;
+			width: 40%;
+			box-sizing: border-box;
+			font-size: 16px;
+			border-radius: 6px;
+		}
+
+		input[type="submit"]{
+			padding: 1.8%;
+			width: auto;
+			background: #FE9A2E;
+			border:none;
+		}
+
+		input[type="reset"], input[id="eliminar"]{
+			padding: 1.8%;
+			width: auto;
+			background: #c0392b;
+			border:none;
+		}
+
+		input[type="submit"]:hover{
+			background: #ffa544;
+			cursor: pointer;
+		}
+
+		input[type="reset"]:hover, input[id="eliminar"]:hover{
+			background:#cd6155;
+			cursor: pointer;
+		}
+
+		input[type="radio"]{
+			width: 10%;
+
+		}
+
+		input[type="checkbox"]{
+			width: 4%;
+
+		}
+
+		input[type="button"]{
+			padding: 1.8%;
+			width: auto;
+			border:none;
+			background: #ccc;
+			float: left;
+			position: relative;
+			left: 5%;
+
+		}
+
+		input[type="button"]:hover{
+			background: #d7dbdd;
+		}
+
+		
+
+
+	@media screen and (max-width: 1290px){
+
+		.b{
+			display: none;
+		}
+
+		.c{
+			display: block;
+		}
+
+		.d{
+			display: none;
+		}
+
+		.a a, .c a{
+			padding: 10px 20px 10px 20px;
+		}
+
+		nav > ul > .iz{
+			float:left;
+		}
+
+		#uno{
+		position: relative;
+		left: 0;
+		}
+
+		#dos{
+			position: relative;
+			left: 0;
+		}
+
+		#barra{
+			width: 50%
+		}
+
+	}
+
+	
+
+	@media screen and (max-width: 1195px){
+		.i{
+			width: 200px;
+			height: 175px;
+		}
+	}
+
+	@media screen and (max-width:1020px){
+		#p1{
+			height: 200px;
+		}
+	}
+
+	@media screen and (max-width: 975px){
+		.i{
+			width: 190px;
+			height: 168px;
+		}
+	}
+
+	@media screen and (max-width: 930px){
+		.i{
+			width: 177px;
+			height: 158px;
+		}
+	}
+
+	@media screen and (max-width: 900px){
+
+		.a{
+			display: none;
+		}
+
+		.d{
+			display: block;
+		}
+
+		#barra{
+			left: 8%;
+			width: 20%;
+		}
+
+		.i{
+			width: 158px;
+			height: 136px;
+		}
+
+	}
+
+	@media screen and (max-width: 850px){
+		
+		#menu_lateral{
+			display: none;
+		}
+
+		.cuerpo{
+			width: 95%;
+			margin-left: 3%; 
+		}
+
+		.i{
+			width: 177px;
+			height: 158px;
+		}
+	}
+
+	@media screen and (max-width: 805px){
+		
+		#red, #red1, #red2, #red3{
+			font-size: 35px;
+			display: inline-block;
+			width: 40%;
+			box-sizing: border-box;
+		}
+		
+	}
+
+	@media screen and (max-width: 700px){
+
+		.i{
+			width: 160px;
+			height: 147px;
+		}
+	}
+
+	@media screen and (max-width: 650px){
+
+		.i{
+			width: 140px;
+			height: 122px;
+		}
+	}
+
+	@media screen and (max-width: 630px){
+		
+		#p11, #p12, #p13{
+			display: block;
+			width: 100%;
+		}
+
+		#red, #red1, #red2, #red3{
+			font-size: 35px;
+			display: inline-block;
+			width: 23%;
+			box-sizing: border-box;
+		}
+		
+	}
+
+	@media screen and (max-width: 550px){
+
+		.i{
+			width: 129px;
+			height: 109px;
+		}
+	}
+
+	@media screen and (max-width: 500px){
+
+		.i{
+			width: 128px;
+			height: 107px;
+		}
+	}
